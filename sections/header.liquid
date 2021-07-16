@@ -88,7 +88,7 @@
               <div class="menu-drawer__navigation-container">
                 <nav class="menu-drawer__navigation">
                   <ul class="menu-drawer__menu list-menu" role="list">
-                    <li>cedhome</li>
+                    
                     {%- for link in section.settings.menu.links -%}
                       <li>
                         {%- if link.links != blank -%}
@@ -300,6 +300,7 @@
     {%- if section.settings.menu != blank -%}
       <nav class="header__inline-menu">
         <ul class="list-menu list-menu--inline" role="list">
+          <li>cedhome</li>
           {%- for link in section.settings.menu.links -%}
             <li>
               {%- if link.links != blank -%}
