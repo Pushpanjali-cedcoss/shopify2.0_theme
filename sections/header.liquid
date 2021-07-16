@@ -310,8 +310,8 @@
           {%endcomment%}
           {%assign cedmenu = section.settings.menu%}
           {%assign items = linklists.ced%}
-{{items}}
-          {%- for link in linklist.main-menu.links -%}
+
+          {%- for link in items.links -%}
             <li>
               {%- if link.links != blank -%}
                 <details-disclosure>
