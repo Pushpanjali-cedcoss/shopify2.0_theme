@@ -300,10 +300,8 @@
     {%- if section.settings.menu != blank -%}
       <nav class="header__inline-menu">
         <ul class="list-menu list-menu--inline" role="list">
-          {%for link in section.settings.menu%}
-          	{%for item in link.links%}
-          		<li>{{item}}</li>
-          	{%endfor%}
+          {% for link in linklists.main-menu.links %}
+          	<li>{{link}}</li>
           {%endfor%}
           {%- for link in section.settings.menu.links -%}
             <li>
