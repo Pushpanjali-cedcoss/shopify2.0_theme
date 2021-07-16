@@ -311,7 +311,7 @@
           {%assign cedmenu = section.settings.menu%}
           {%assign items = linklists[cedmenu]%}
 
-          {%- for link in section.settings.menu.links -%}
+          {%- for link in items.links -%}
             <li>
               {%- if link.links != blank -%}
                 <details-disclosure>
