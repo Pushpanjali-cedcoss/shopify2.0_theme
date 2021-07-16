@@ -300,14 +300,16 @@
     {%- if section.settings.menu != blank -%}
       <nav class="header__inline-menu">
         <ul class="list-menu list-menu--inline" role="list">
-          {% for item in linklists.main-menu.links %}
-          	<li>
-              <a class="header__menu-item header__menu-item list-menu__item link link--text focus-inset" href="{{item.title}}">
-              {{item.title}}
-              </a>
-            </li>
-          {%endfor%}
-          {%- for link in section.settings.menu.links -%}
+          {%comment%}
+            {% for item in linklists.main-menu.links %}
+              <li>
+                <a class="header__menu-item header__menu-item list-menu__item link link--text focus-inset" href="{{item.title}}">
+                {{item.title}}
+                </a>
+              </li>
+            {%endfor%}
+          {%endcomment%}
+          {%- for link in linklists.main-menu.links -%}
             <li>
               {%- if link.links != blank -%}
                 <details-disclosure>
