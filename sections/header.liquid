@@ -301,7 +301,7 @@
       <nav class="header__inline-menu">
         <ul class="list-menu list-menu--inline" role="list">
           {% for link in linklists.main-menu.links %}
-          	<li>{{link}}</li>
+          	<li>{{link.title}}</li>
           {%endfor%}
           {%- for link in section.settings.menu.links -%}
             <li>
