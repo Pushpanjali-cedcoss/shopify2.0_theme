@@ -311,7 +311,7 @@
           {%assign menu = section.settings.menu%}
           {%assign items = linklist.menu.links%}
           
-          {%- for link in items -%}
+          {%- for link in linklist.main-menu.links -%}
             <li>
               {%- if link.links != blank -%}
                 <details-disclosure>
