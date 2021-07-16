@@ -310,8 +310,8 @@
             {%endfor%}
           {%endcomment%}
           {%assign menu = section.settings.menu%}
-          {%assign items = linklist.main-menu.links%}
-          {{items}}
+          {%assign items = linklist.menu.links%}
+          
           {%- for link in linklists.main-menu.links -%}
             <li>
               {%- if link.links != blank -%}
