@@ -300,6 +300,7 @@
     {%- if section.settings.menu != blank -%}
       <nav class="header__inline-menu">
         <ul class="list-menu list-menu--inline" role="list">
+          {{ linklists.main.title }}
           <li>cedhome {{section.settings.menu}}</li>
           {%- for link in section.settings.menu.links -%}
             <li>
