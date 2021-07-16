@@ -302,6 +302,7 @@
         <ul class="list-menu list-menu--inline" role="list">
           {%for link in section.settings.menu%}
           	{%for item in link.links%}
+          		{{item.title}}
           	{%endfor%}
           {%endfor%}
           {%- for link in section.settings.menu.links -%}
