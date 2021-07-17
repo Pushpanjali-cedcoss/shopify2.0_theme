@@ -17,7 +17,7 @@
 
 .color-accent-1 {
   --color-foreground: var(--color-base-solid-button-labels);
-  background: var(--color-base-accent-1);
+  background-color: var(--color-base-accent-1);
 }
 
 .color-accent-2 {
