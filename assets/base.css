@@ -1,4 +1,7 @@
 /* Color custom properties */
+.color-accent-1 {
+  background-color : red;
+}
 
 :root,
 .color-background-1 {
@@ -15,9 +18,7 @@
   --color-background: var(--color-base-text);
 }
 
-.color-accent-1 {
-  background-color : red;
-}
+
 
 .color-accent-2 {
   --color-foreground: var(--color-base-solid-button-labels);
