@@ -54,9 +54,7 @@
 
     {% section 'announcement-bar' %}
     {% section 'header' %}
-    Hex Color - {{ settings.colors_accent_1}}
-    RGB COLOR - {{ settings.colors_accent_1 | color_extract: 'red' }}, {{ settings.colors_accent_1 | color_extract: 'green' }}, {{ settings.colors_accent_1 | color_extract: 'blue' }};
-
+    
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
