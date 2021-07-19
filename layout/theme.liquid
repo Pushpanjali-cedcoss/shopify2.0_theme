@@ -33,7 +33,7 @@
       assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
     %}
 
-    
+    {%-render 'root_variable'-%}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
