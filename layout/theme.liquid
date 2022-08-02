@@ -55,7 +55,7 @@
     {% section 'announcement-bar' %}
     {% section 'header' %}
     
-    { % if request.page_type=="orders"} 
+    {% if request.page_type=="orders"%} 
      <div id="supplier_name">dsfsdf</div>
 <!--             <script>
             var id = "{{product.tags}}".match(/seller_id=([0-9]{0,})/g)[0].replace("seller_id" , "user_id");
@@ -71,7 +71,7 @@
               console.error('Error:', error);
              });
             </script> -->
-    { % end if}
+      {% endif %}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
