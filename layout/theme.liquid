@@ -56,8 +56,8 @@
     {% section 'header' %}
     
     { % if request.page_type=="orders"} 
-     <div id="supplier_name"></div>
-            <script>
+     <div id="supplier_name">dsfsdf</div>
+<!--             <script>
             var id = "{{product.tags}}".match(/seller_id=([0-9]{0,})/g)[0].replace("seller_id" , "user_id");
             fetch(`https://devbackend.cedcommerce.com/home/public/connector/vendor/getvendorByUserId?${id}`, {
             method: 'GET', 
@@ -70,7 +70,7 @@
             .catch((error) => {
               console.error('Error:', error);
              });
-            </script>
+            </script> -->
     { % end if}
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
